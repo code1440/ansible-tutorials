@@ -10,5 +10,6 @@
         aws_secret_key: "{{ lookup('env', 'AWS_SECRET_KEY') }}"
         filters:
           instance-state-name: running
-      register: ec2_remote_facts
-      - debug: ec2_remote_facts
+      register: facts
+    - debug: 
+      var: facts
