@@ -1,11 +1,15 @@
 ---
 - hosts: localhost
   connection: local
-  gather_facts: yes
+  gather_facts: True
   tasks:
     - name: Gather EC2 remote facts.
       ec2_remote_facts:
+        key_name: "{{ lookup('env','AWS_KEY_PAIR') }}"
+        group: sep06
         region: "{{ region }}"
+        aws_access_key: "{{ lookup('env', 'AWS_ACCESS_KEY') }}"
+        aws_secret_key: "{{ lookup('env', 'AWS_SECRET_KEY') }}"
         filters:
           instance-state-name: running
       register: ec2_remote_facts
