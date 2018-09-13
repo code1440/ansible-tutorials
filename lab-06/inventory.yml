@@ -11,3 +11,4 @@
         filters:
           instance-state-name: running
       register: ec2_remote_facts
+      print: ec2_remote_facts
