@@ -5,7 +5,6 @@
   tasks:
     - name: Gather EC2 remote facts.
       ec2_remote_facts:
-        key_name: "{{ lookup('env','AWS_KEY_PAIR') }}"
         group: sep06
         region: "us-east-1"
         aws_access_key: "{{ lookup('env', 'AWS_ACCESS_KEY') }}"
