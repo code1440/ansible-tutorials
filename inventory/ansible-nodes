@@ -1,7 +1,4 @@
 node01 ansible_host=ec2-54-161-255-250.compute-1.amazonaws.com
-
-
-
 [webservers]
 node01
 
