@@ -1,5 +1,5 @@
 - name: Installing git
-  hosts: webserver
+  hosts: webservers
   roles:
     - git
     - docker
