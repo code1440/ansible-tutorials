@@ -1,10 +1,9 @@
-node01 ansible_host=ec2-35-182-223-109.ca-central-1.compute.amazonaws.com
-node02 ansible_host=ec2-35-183-115-47.ca-central-1.compute.amazonaws.com
-node03 ansible_host=ec2-35-182-91-226.ca-central-1.compute.amazonaws.com
+node01 ansible_host=ec2-54-164-38-108.compute-1.amazonaws.com
+node02 ansible_host=ec2-34-232-65-207.compute-1.amazonaws.com
+
 
 [webservers]
 node01
-node02
 [appservers]
 node02
 
